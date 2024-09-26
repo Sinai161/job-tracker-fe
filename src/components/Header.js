@@ -6,7 +6,7 @@ const Header = () => {
 const user = () => {
     return(
      <div>
-        <h1>Hi Ashley</h1>
+        <h1>Hey, Ashley</h1>
     </div>
     )
 }
@@ -22,8 +22,8 @@ function currentDate() {
 
     return(
         <div>
-            <h1>{user()}</h1>
-            <h1>{currentDate()}</h1>
+            <h1 class="text-left">{user()}</h1>
+            <h1 class="text-left text-slate-600">{currentDate()}</h1>
         </div>
     )
 }
