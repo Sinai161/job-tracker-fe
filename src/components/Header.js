@@ -23,7 +23,7 @@ function currentDate() {
     return(
         <div>
             <h1 class="text-left">{user()}</h1>
-            <h1 class="text-left text-slate-600">{currentDate()}</h1>
+            <h1 class="text-left text-slate-600 border-b-4">{currentDate()}</h1>
         </div>
     )
 }
