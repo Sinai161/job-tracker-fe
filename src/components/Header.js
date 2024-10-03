@@ -21,9 +21,9 @@ function currentDate() {
     // console.log(currentDate)
 
     return(
-        <div>
-            <h1 className="text-left font-roboto">{user()}</h1>
-            <h1 className="text-left text-slate-600 border-b-2">{currentDate()}</h1>
+        <div className="">
+            <h1 className="text-center font-roboto">{user()}</h1>
+            <h1 className="text-center text-slate-600 border-b-2 ">{currentDate()}</h1>
         </div>
     )
 }
