@@ -22,9 +22,11 @@ const Sidebar = () => {
         setUser(userLogin)
     })
     return(
-    <div className="">
-        <img src="assets/370082334-f2a67fab-f222-4bf2-82c3-0ad258b65a21.png" alt="logo"/>
-        <h1 className="">Job Tracker</h1>
+    <div className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+        <div className="">
+        <img className="sidebar-img" src="assets/370082334-f2a67fab-f222-4bf2-82c3-0ad258b65a21.png" alt="logo"/>
+        <h1 className="mb-2 p-4">Job Tracker</h1>
+        </div>
         <h3>Dashboard</h3>
         <h3>Applications</h3>
         {/* <h4>{user.firstName}{user.lastName}</h4> */}

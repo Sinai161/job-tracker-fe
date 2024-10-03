@@ -16,6 +16,10 @@ body {
   margin-left: 35px;
 }
 
+.sidebar-img {
+  width: 40px;
+}
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
