@@ -31,6 +31,15 @@ h3 {
   font-size: 16px;
 }
 
+.applications-logo {
+  width: 26px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
