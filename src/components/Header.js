@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Sidebar from "./Sidebar";
 const Header = () => {
     const [date, setDate ] = useState(new Date())
 
@@ -22,9 +21,10 @@ function currentDate() {
     // console.log(currentDate)
 
     return(
-        <div className="">
+        <div className="header">
             <h1 className="header1 text-center font-roboto">{user()}</h1>
-            <h1 className="date-border header2 text-center text-slate-600 border-b-2">{currentDate()}</h1>
+            <h1 className="header2 text-center text-slate-600">{currentDate()}</h1>
+            <div className="border-b-2"></div>
         </div>
     )
 }

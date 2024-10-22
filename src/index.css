@@ -12,8 +12,8 @@ body {
   
 }
 .header2 {
-  padding-bottom: 14px;
-  margin-left: 35px;
+  padding-bottom: 7px;
+  /* margin-left: 35px; */
 }
 
 .sidebar-img {
@@ -37,6 +37,11 @@ h3 {
 
 button {
   margin-left: 10px;
+}
+
+.header {
+  position: absolute;
+  padding-left: 350px;
 }
 
 
