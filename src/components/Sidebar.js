@@ -19,8 +19,9 @@ const Sidebar = () => {
     const [user, setUser] = useState(userLogin)
     const [isOpen, setOpen] = useState(true)
     const isVisible = () => (isOpen ? '' : 'hidden')
-    const buttonStyles = () => (isOpen ? '' : '')
+    const buttonStyles = () => (isOpen ? '' : 'rounded-full size-12')
     const imgStyles = () => (isOpen ? '': 'w-8 h-8 mx-3')
+    const userName = () => (isOpen ? '' : 'hidden')
     // whensomeone clicks on the button we want to switch between w-full / w-32 
     const toggle = (e) => {
         setOpen(!isOpen)
@@ -47,8 +48,9 @@ const Sidebar = () => {
                 <img className={`applications-logo inline-flex ${imgStyles()}`} src="/assets/372282690-2583ee41-9963-4b69-ab88-a42ea69c3f0e.png" alt="logo"/>
                 <button className={`text-lg m-3 ${isVisible()}`}>Applications</button>
             </div>
-            <h4 className="absolute inset-x-0 bottom-0">{user.email}</h4>
-            <h4 className="absolute inset-x-0 bottom-6">{user.firstName}{user.lastName}</h4>
+            <h4 className={`absolute inset-x-0 bottom-0 ${userName()}`}>{user.email}</h4>
+            <h4 className={`absolute inset-x-0 bottom-6 ${userName()}`}>{user.firstName}{user.lastName}</h4>
+            <img className={`${isOpen ? 'hidden' : 'absolute inset-x-0 bottom-0'}`}  src="assets/icon-user 2.png" alt="icon"/>
 
             <UserInfo props={user}></UserInfo>
         </div>
