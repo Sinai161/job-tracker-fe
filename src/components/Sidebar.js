@@ -37,7 +37,7 @@ const Sidebar = () => {
                 <img className="sidebar-img" src="assets/370082334-f2a67fab-f222-4bf2-82c3-0ad258b65a21.png" alt="logo" />
                 <h1 className={`title sidebar-title ${isVisible()}`}>job tracker</h1>
                 <button onClick={toggle}>
-                    <img className="w-3 h-3" src="assets/icon-collapse 1.png" alt="logo" />
+                    <img className={`w-3 h-3 ${isOpen ? '' : 'rotate-180'}`} src="assets/icon-collapse 1.png" alt="logo" />
                 </button>
             </div>
             <div className={`hover:bg-white rounded-md ${buttonStyles()}`}>
