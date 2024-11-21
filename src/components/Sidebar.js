@@ -20,7 +20,7 @@ const Sidebar = () => {
     const [isOpen, setOpen] = useState(true)
     const isVisible = () => (isOpen ? '' : 'hidden')
     const buttonStyles = () => (isOpen ? '' : '')
-    const imgStyles = () => (isOpen ? '': 'w-8 h-8')
+    const imgStyles = () => (isOpen ? '': 'w-8 h-8 mx-3')
     // whensomeone clicks on the button we want to switch between w-full / w-32 
     const toggle = (e) => {
         setOpen(!isOpen)
@@ -44,7 +44,7 @@ const Sidebar = () => {
                 <button className={`text-lg m-3 ${isVisible()}`}>Dashboard</button>
             </div>
             <div className={`hover:bg-white rounded-md ${buttonStyles()}`}>
-                <img className="applications-logo inline-flex " src="/assets/372282690-2583ee41-9963-4b69-ab88-a42ea69c3f0e.png" alt="logo" />
+                <img className={`applications-logo inline-flex ${imgStyles()}`} src="/assets/372282690-2583ee41-9963-4b69-ab88-a42ea69c3f0e.png" alt="logo"/>
                 <button className={`text-lg m-3 ${isVisible()}`}>Applications</button>
             </div>
             <h4 className="absolute inset-x-0 bottom-0">{user.email}</h4>
